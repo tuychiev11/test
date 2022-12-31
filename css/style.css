@@ -83,7 +83,16 @@ button:hover {
 }
 
 .person-photo img {
-    height: 500px;
+    max-width: 375px;
+    max-height: 100%;
+}
+
+.person-photo .person-mobile {
+    display: none;
+}
+
+.person-photo {
+    order: 1;
 }
 
 .main-left-part h1 {
@@ -120,6 +129,7 @@ button:hover {
     background: inherit;
     color: black;
 }
+
 
 
 .sponsors {
@@ -168,4 +178,53 @@ button:hover {
 
 .show {
     display: block;
+}
+
+@media (max-width: 500px) {
+
+    .main-left-part {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .main-left-part h1 {
+        margin-bottom: 35px;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+
+    .contacts-list {
+        display: none;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .main-left-part span {
+        margin-left: 5px;
+    }
+
+    .main-left-part h1 {
+        font-size: 25px;
+    }
+
+    .person-photo img {
+        display: none;
+    }
+
+    .person-photo .person-mobile {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .person-photo {
+        order: -1;
+    }
+
+    .sponsors {
+        padding: 15px;
+    }
+   
 }
