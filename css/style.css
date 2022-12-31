@@ -180,7 +180,7 @@ button:hover {
     display: block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
 
     .main-left-part {
         text-align: center;
