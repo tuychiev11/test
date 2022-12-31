@@ -131,12 +131,14 @@ button:hover {
 }
 
 
-
 .sponsors {
     display: flex;
     justify-content: space-between;
 }
 
+li:hover .dropdown {
+    display: block;
+}
 .dropdown-item {
     display: flex;
     justify-content: space-between;
@@ -164,7 +166,7 @@ button:hover {
 .dropdown {
     display: none;
     position: absolute;
-    margin-top: 12px;
+    margin-top: 9px;
 }
 
 .dropdown-span {
@@ -176,12 +178,27 @@ button:hover {
     font-size: 15px;
 }
 
-.show {
-    display: block;
-}
+@media (max-width: 900px) {
+    header {
+        padding: 20px 20px;
+    }
 
-@media (max-width: 500px) {
+    .header-left-part img {
+        width: 50px;
+    }
 
+    .contacts-registration a{
+        margin-right: 20px;
+    }
+
+    .contacts-registration a, .contacts-registration button {
+        font-size: 10px;
+    }
+
+    .contacts-registration button {
+        padding: 9px 12px;
+    }
+    
     .main-left-part {
         text-align: center;
         margin-top: 30px;
@@ -198,9 +215,7 @@ button:hover {
         display: none;
     }
 
-    header {
-        padding: 20px 20px;
-    }
+  
 
     .main-left-part span {
         margin-left: 5px;
@@ -208,6 +223,14 @@ button:hover {
 
     .main-left-part h1 {
         font-size: 25px;
+    }
+
+    .main-left-part p {
+        font-size: 13px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
     }
 
     .person-photo img {
